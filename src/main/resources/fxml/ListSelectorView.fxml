@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="view" prefHeight="56.0" prefWidth="193.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints vgrow="NEVER" />
+      <RowConstraints vgrow="ALWAYS" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="NEVER" />
+      <ColumnConstraints hgrow="ALWAYS" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="leftLabel" text="Izquierda" GridPane.halignment="CENTER" />
+      <Label fx:id="rigthLabel" text="Derecha" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+      <ListView fx:id="leftList" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="moveLeftButton" lineSpacing="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMoveLeft" text="&lt;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="moveAllLeftButton" lineSpacing="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMoveAllLeft" text="&lt;&lt;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="moveAllRightButton" lineSpacing="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMoveAllRight" text="&gt;&gt;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="moveRightButton" lineSpacing="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMoveRight" text="&gt;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <ListView fx:id="rightList" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

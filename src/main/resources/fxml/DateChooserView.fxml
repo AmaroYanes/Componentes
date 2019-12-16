@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+
+
+<fx:root fx:id="view" alignment="CENTER" type="HBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <ComboBox fx:id="daysCombo" prefHeight="25.0" prefWidth="99.0" />
+      <ComboBox fx:id="monthsCombo" prefHeight="25.0" prefWidth="91.0" />
+      <ComboBox fx:id="yearsCombo" prefHeight="25.0" prefWidth="95.0" />
+   </children>
+</fx:root>
